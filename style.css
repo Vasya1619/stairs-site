@@ -117,6 +117,7 @@ body {
     padding: 40px 20px;
     transition: 0.5s;
     height: 100vh;
+    height: 100dvh;
     z-index: 8;
   }
 
