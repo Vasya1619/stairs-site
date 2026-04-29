@@ -108,7 +108,7 @@ body {
 
   .menu {
     position: fixed;
-    top: 96px;
+    top: 65px;
     right: -100%;
     opacity: 0;
     width: 250px;
