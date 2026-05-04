@@ -1,0 +1,10 @@
+.gallery {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.gallery.active {
+  max-height: 900px;
+  opacity: 1;
+}
