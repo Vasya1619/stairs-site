@@ -1,22 +1,25 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const select = document.getElementById("gallerySelect");
+    const select = document.getElementById("gallerySelect");
 
-  fetch("https://levelwood.pro/api/galleries")
+    fetch("/api/galleries")
     .then(res => res.json())
     .then(data => {
-      data.forEach(item => {
+        data.forEach(item => {
         const option = document.createElement("option");
         option.value = item.id;
         option.textContent = item.name;
+
         select.appendChild(option);
-      });
+        });
     });
 });
 
 document.getElementById("save").onclick = async () => {
+
   const id = document.getElementById("gallerySelect").value;
 
-  await fetch("https://levelwood.pro/api/gallery/update", {
+  // description
+  await fetch("/api/gallery/update", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -28,9 +31,12 @@ document.getElementById("save").onclick = async () => {
     })
   });
 
-  await fetch("https://levelwood.pro/api/gallery/update-images", {
+  // 2. images
+  await fetch("/api/gallery/update-images", {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json"
+    },
     body: JSON.stringify({
       gallery_id: id,
       img1: document.getElementById("imageInput-1").value,
@@ -39,21 +45,21 @@ document.getElementById("save").onclick = async () => {
     })
   });
 
+
   alert("Обновлено");
 };
 
-const BASE = "https://levelwood.pro";
 
-fetch("https://levelwood.pro/api/images")
+fetch('/api/images')
   .then(res => res.json())
   .then(files => {
-    const galleries = document.querySelectorAll(".gallery");
+    const galleries = document.querySelectorAll('.gallery');
 
     galleries.forEach(container => {
       files.forEach(file => {
-        const img = document.createElement("img");
+        const img = document.createElement('img');
 
-        img.src = `${BASE}/images/${file}`;
+        img.src = `/images/${file}`;
         img.style.width = "100px";
         img.style.height = "100px";
         img.style.objectFit = "cover";
@@ -63,6 +69,8 @@ fetch("https://levelwood.pro/api/images")
     });
   });
 
+
+// клики по галереям
 document.querySelectorAll(".gallery").forEach(gallery => {
   gallery.addEventListener("click", (e) => {
     if (e.target.tagName === "IMG") {
@@ -73,3 +81,10 @@ document.querySelectorAll(".gallery").forEach(gallery => {
     }
   });
 });
+// допустим ты уже добавил картинки через fs или массив
+
+
+
+
+
+
