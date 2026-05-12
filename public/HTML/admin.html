@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/admin.css">
+    
+</head>
+<body>
+    <div class="admin-panel">
+        <div class="container">
+            <div class="admin__title" class="h3">Admin panel</div>
+            <div class="admin-panel__inner">
+
+                <select id="gallerySelect"></select>
+
+                <p>Галерея для первой фотки</p>
+                <div class="gallery" id="gallery-1" data-input="imageInput-1"></div>
+
+                <div class="gallery__block">
+                    <input type="text" id="imageInput-1">
+                </div>
+                <p>Галерея для второй фотки</p>
+                <div class="gallery" id="gallery-2" data-input="imageInput-2"></div>
+                <div class="gallery__block">
+                    
+                    <input type="text" id="imageInput-2">
+                </div>
+                <p>Галерея для третьей фотки</p>
+                <div class="gallery" id="gallery-3" data-input="imageInput-3"></div>
+                <div class="gallery__block">
+                    
+                    <input type="text" id="imageInput-3">
+                </div>
+                
+                
+                <div class="admin-panel__inputs">
+                    <div class="inputs__description">
+                        <input id="title" placeholder="заголовок">
+                        <input id="price" placeholder="Цена">
+                        <input id="materials" placeholder="Материалы">
+                        <input id="duration" placeholder="Сроки">  
+                        <input id="painting" placeholder="покраска">  
+                    </div>
+                </div>
+                <button id="save">Сохранить</button>
+
+                <form id="uploadForm">
+                    <input type="file" name="image" id="imageInput">
+                    <button class="button__loading" type="submit">Загрузить</button>
+                </form> 
+            </div>
+        </div>
+    </div>
+    <script src="../JS/admin.js" defer></script>
+    <script src="../JS/fetch.js" defer></script>
+</body>
+</html>

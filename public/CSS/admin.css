@@ -1,0 +1,126 @@
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  background-color: #111111;
+  color: #e4e4e4;
+  line-height: 1.6;
+}
+
+input {
+  font-family: "Montserrat Alternates", sans-serif;
+  background-color: #111111;
+  color: #ffa34d;
+  padding: 10px;
+  border: 1px solid #474747;
+  border-radius: 10px;
+}
+
+input::placeholder {
+  color: #808080;
+}
+
+#imageInput-1,#imageInput-2,#imageInput-3 {
+  display: none;
+}
+
+.admin-panel__inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.admin__title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.inputs__description {
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+
+#save {
+  margin-top: 25px;
+  padding: 10px 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #ffa34d;
+  border: 1px solid #ffa34d;
+  cursor: pointer;
+  width: 200px;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+#save:hover {
+  color: #111111;
+  border: 1px solid #ffa34d;
+  background-color: #ffa34d;
+}
+
+.btn-image {
+  padding: 10px 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #ffa34d;
+  border: 1px solid #ffa34d;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.btn-image:hover {
+  color: #111111;
+  border: 1px solid #ffa34d;
+  background-color: #ffa34d;
+}
+
+.gallery__block {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+#gallerySelect {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ffa34d;
+  border: 1px solid #2b2b2b;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.gallery img.active {
+    border: 3px solid #ffbb54;
+    border-radius: 10px;
+}
+
+#uploadForm {
+  margin-top: 150px;
+}
+
+.button__loading {
+  padding: 10px 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #ffa34d;
+  border: 1px solid #ffa34d;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 10px; 
+}
+
+.button__loading:hover {
+  color: #111111;
+  border: 1px solid #ffa34d;
+  background-color: #ffa34d;
+}
+
+p {
+  margin-bottom: 10px;
+}
