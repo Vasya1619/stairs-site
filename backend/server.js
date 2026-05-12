@@ -20,7 +20,7 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
 const PORT = process.env.PORT || 5000;;
-const DB_URL = 'mysql://root:VhBgJTsagbxEhYGpRguvVgczcJVlOGUZ@junction.proxy.rlwy.net:19689/railway'
+const DB_URL = 'mysql://root@localhost:3306/stairs'
 const connection = await mysql.createPool(DB_URL)
 const JWT_SECRET = 'mySecretKey123';
 
