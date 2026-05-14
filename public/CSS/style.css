@@ -320,7 +320,7 @@ body {
 .gallery__inner {
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    gap: 40px;
     align-items: center;
     opacity: 0;
     transform: translateY(150px);
@@ -329,13 +329,13 @@ body {
 
 @media (max-width: 1340px) {
     .gallery__inner {
-        gap: 50px;
+        gap: 30px;
     }
 }
 
 @media (max-width: 1050px) {
     .gallery__inner {
-        gap: 35px;
+        gap: 25px;
     }
 }
 
@@ -366,7 +366,7 @@ body {
 .gallery__slide-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 20px;
     overflow: hidden;
     border-radius: 7px;
 }
