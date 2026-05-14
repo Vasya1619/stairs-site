@@ -26,7 +26,8 @@ document.getElementById("save").addEventListener("click", async () => {
       title: document.getElementById("title").value,
       price: document.getElementById("price").value,
       materials: document.getElementById("materials").value,
-      duration: document.getElementById("duration").value
+      duration: document.getElementById("duration").value,
+      painting: document.getElementById("painting").value
     })
   });
 
