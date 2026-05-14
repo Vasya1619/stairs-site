@@ -126,7 +126,7 @@ app.get("/api/galleries", async (req, res) => {
 
 app.post("/api/gallery/update", async (req, res) => {
   try {
-    const { id, title, price, materials, duration } = req.body;
+    const { id, title, price, materials, duration, painting } = req.body;
 
     const fields = [];
     const values = [];
@@ -135,6 +135,7 @@ app.post("/api/gallery/update", async (req, res) => {
     if (price) fields.push("price = ?"), values.push(price);
     if (materials) fields.push("materials = ?"), values.push(materials);
     if (duration) fields.push("duration = ?"), values.push(duration);
+    if (painting) fields.push("painting = ?"), values.push(painting);
 
     if (fields.length === 0) {
       return res.status(400).json({
