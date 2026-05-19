@@ -17,6 +17,7 @@ body {
         margin: 0 auto;
     }
 }
+
 /* HEADER */
 
 .header {
@@ -172,6 +173,12 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+@media (max-width: 1000px) {
+    .hero {
+     background-image: url('../images/');
+    } 
 }
 
 @media (max-width: 450px) {
