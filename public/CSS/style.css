@@ -168,7 +168,7 @@ body {
 .hero {
     padding-top: 97px;
     position: relative;
-    background-image: url('../images/hero-plus.png');
+    background-image: url('../images/hero.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
