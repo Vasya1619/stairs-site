@@ -187,7 +187,7 @@ body {
     opacity: 0;
     transform: translateX(-150px);
     transition: 1s ease;
-    height: 800px;
+    height: 900px;
 }
 
 @media (max-width: 1340px) {
