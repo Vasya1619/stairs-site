@@ -172,13 +172,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-@media (max-width: 1340px) {
-    .hero {
-        background-image: url('../images/hero-mobile.png');
-    }  
 }
 
 @media (max-width: 450px) {
@@ -203,9 +196,9 @@ body {
     justify-content: space-between;
     padding-bottom: 100px;
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(-150px);
     transition: 1s ease;
-    height: 750px;
+    height: 800px;
 }
 
 @media (max-width: 1340px) {
@@ -310,7 +303,7 @@ body {
     }
 
     .text-content {
-        margin-top: 60px;
+        margin-top: 50px;
     }
 }
 
