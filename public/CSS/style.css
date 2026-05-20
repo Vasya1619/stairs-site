@@ -177,7 +177,7 @@ body {
 
 @media (max-width: 1000px) {
     .hero {
-         background-image: url('../images/hero-mobile');
+         background-image: url('../images/hero-mobile.png');
     } 
 }
 
