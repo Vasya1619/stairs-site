@@ -177,7 +177,7 @@ body {
 
 @media (max-width: 1000px) {
     .hero {
-     background-image: url('../images/');
+         background-image: url('../images/hero-mobile');
     } 
 }
 
@@ -281,7 +281,7 @@ body {
 
 @media (max-width: 450px) {
     .hero__button {
-        padding: 15px 10px;
+        padding: 15px 15px;
         font-size: 14px;
     }
 
@@ -294,11 +294,15 @@ body {
     .hero__description {
         font-size: 16px;
         max-width: 300px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .text-content {
-        margin-top: 50px;
+        margin-top: 15px;
+    }
+
+    .hero__button-block {
+        flex-direction: column;
     }
 }
 
