@@ -307,8 +307,8 @@ body {
 }
 
 .hero__button:hover{
-    background-color: #dadada;
-    border: 1px solid #7c7c7c;
+    background-color: #e4e4e4;
+    border: 1px solid #e4e4e4;
     color: #111111;
 }
 
